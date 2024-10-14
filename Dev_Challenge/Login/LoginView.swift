@@ -12,15 +12,18 @@ class LoginView: UIView {
     
     let purpleView = CustomBackgroundView(backgroundColor: .purple)
     let imageTitle = CustomImageView(imageName: "Vector", contentMode: .scaleAspectFit)
+    
     let titleLabel = CustomLabel(text: "Log in", fontSize: 30, fontWeight: .bold, textColor: .black)
-    let subtitleLabel = CustomLabel(text: "Welcome to My Statement, please fill in the\n fields below to log into your account.", fontSize: 16, textColor: .black, numberOfLines: 2)
-    let emailLabel = CustomLabel(text: "E-mail")
-    let emailTextfield = CustomTextField(placeholder: "E-mail")
-    let PasswordLabel = CustomLabel(text: "Password")
-    let passwordTextfield = CustomTextField(placeholder: "Password", isSecure: true, leftIconName: "Group")
-    let loginButton = CustomButton(title: "Login")
-    let orLabel = CustomLabel(text: "Or", textColor: .black)
-    let createAccountButton = CustomButton(title: "Create account")
+    let subtitleLabel = CustomLabel(text: "Welcome to My Statement, please fill in the\n fields below to log into your account.", fontSize: 16, textColor: .black, numberOfLines: 2, textAlignment: .center)
+    
+    let emailLabel = CustomLabel(text: "E-mail", isbold: true)
+    let emailTextfield = CustomTextField(placeholder: "E-mail", borderColor: .lightGray, borderWidth: 1)
+    let PasswordLabel = CustomLabel(text: "Password", isbold: true)
+    let passwordTextfield = CustomTextField(placeholder: "Password", isSecure: true, leftIconName: "Group",borderColor: .lightGray, borderWidth: 1)
+    
+    let loginButton = CustomButton(title: "Log in", backgroundColor: .black, borderColor: .black, borderWidth: 1,isbold: true)
+    let orLabel = CustomLabel(text: "or", textColor: .black, isbold: true)
+    let createAccountButton = CustomButton(title: "Create account", backgroundColor: .white, borderColor: .lightGray, borderWidth: 1, isbold: true, textColor: .black)
     
     override init(frame: CGRect) {
         super.init(frame: frame)

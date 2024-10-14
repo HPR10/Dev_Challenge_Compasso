@@ -9,13 +9,18 @@ import UIKit
 
 class CustomTextField: UITextField {
     
-    init(placeholder: String, isSecure: Bool = false, leftIconName: String? = nil) {
+    init(placeholder: String, isSecure: Bool = false, leftIconName: String? = nil, borderColor: UIColor = .lightGray, borderWidth: CGFloat = 1.0, cornerRadius: CGFloat = 5.0) {
         super.init(frame: .zero)
         self.placeholder = placeholder
         self.borderStyle = .roundedRect
         self.isSecureTextEntry = isSecure
         self.autocapitalizationType = .none
         self.translatesAutoresizingMaskIntoConstraints = false
+        
+        self.layer.borderColor = borderColor.cgColor
+        self.layer.borderWidth = borderWidth
+        self.layer.cornerRadius = cornerRadius
+        self.layer.masksToBounds = true
         
         if let iconName = leftIconName {
             setupLeftIcon(iconName: iconName)

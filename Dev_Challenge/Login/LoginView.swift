@@ -12,7 +12,6 @@ class LoginView: UIView {
     
     let purpleView = CustomBackgroundView(backgroundColor: .purple)
     let imageTitle = CustomImageView(imageName: "Vector", contentMode: .scaleAspectFit)
-    
     let titleLabel = CustomLabel(text: "Log in", fontSize: 30, fontWeight: .bold, textColor: .black)
     let subtitleLabel = CustomLabel(text: "Welcome to My Statement, please fill in the\n fields below to log into your account.", fontSize: 16, textColor: .black, numberOfLines: 2)
     let emailLabel = CustomLabel(text: "E-mail")
@@ -67,14 +66,14 @@ class LoginView: UIView {
         }
         
         subtitleLabel.snp.makeConstraints { make in
-            make.top.equalTo(titleLabel.snp.bottom).offset(8)
+            make.top.equalTo(titleLabel.snp.bottom).offset(20)
             make.left.equalToSuperview().offset(20)
             make.right.equalToSuperview().offset(-20)
         }
         
         emailLabel.snp.makeConstraints { make in
             make.left.equalToSuperview().offset(20)
-            make.bottom.equalTo(emailTextfield.snp.top).offset(-5)
+            make.bottom.equalTo(emailTextfield.snp.top).offset(-10)
         }
         
         emailTextfield.snp.makeConstraints { make in
@@ -86,7 +85,7 @@ class LoginView: UIView {
         
         PasswordLabel.snp.makeConstraints { make in
             make.left.equalToSuperview().offset(20)
-            make.bottom.equalTo(passwordTextfield.snp.top).offset(-5)
+            make.bottom.equalTo(passwordTextfield.snp.top).offset(-10)
         }
         
         passwordTextfield.snp.makeConstraints{ make in
@@ -99,20 +98,20 @@ class LoginView: UIView {
         
         
         loginButton.snp.makeConstraints { make in
-            make.top.equalTo(passwordTextfield.snp.bottom).offset(40)
+            make.top.equalTo(passwordTextfield.snp.bottom).offset(20)
             make.left.equalToSuperview().offset(20)
             make.right.equalToSuperview().offset(-20)
             make.height.equalTo(50)
         }
         
         orLabel.snp.makeConstraints {make in
-            make.top.equalTo(loginButton.snp.bottom).offset(25)
+            make.top.equalTo(loginButton.snp.bottom).offset(20)
             make.left.equalToSuperview().offset(20)
             make.right.equalToSuperview().offset(-20)
         }
         
         createAccountButton.snp.makeConstraints { make in
-            make.top.equalTo(orLabel.snp.bottom).offset(25)
+            make.top.equalTo(orLabel.snp.bottom).offset(20)
             make.left.equalToSuperview().offset(20)
             make.right.equalToSuperview().offset(-20)
             make.height.equalTo(50)

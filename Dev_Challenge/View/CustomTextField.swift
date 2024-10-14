@@ -31,7 +31,11 @@ class CustomTextField: UITextField {
         iconView.contentMode = .scaleAspectFit
         iconView.frame = CGRect(x:0, y: 0, width: 24, height: 24)
         
-        leftView = iconView
+        let iconContainerView = UIView(frame: CGRect(x: 0, y: 0, width: 40, height: 24))
+        iconContainerView.addSubview(iconView)
+        iconView.center = iconContainerView.center
+        
+        leftView = iconContainerView
         leftViewMode = .always
     }
 }

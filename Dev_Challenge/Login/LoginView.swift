@@ -12,12 +12,15 @@ class LoginView: UIView {
     
     let purpleView = CustomBackgroundView(backgroundColor: .purple)
     let imageTitle = CustomImageView(imageName: "Vector", contentMode: .scaleAspectFit)
-    let titleLabel = CustomLabel(text: "Log in", fontSize: 30, fontWeight: .bold, textColor: .gray)
-    let subtitleLabel = CustomLabel(text: "Welcome to My Statement, please fill in the\n fields below to log into your account.", fontSize: 16, textColor: .gray, numberOfLines: 2)
+    
+    let titleLabel = CustomLabel(text: "Log in", fontSize: 30, fontWeight: .bold, textColor: .black)
+    let subtitleLabel = CustomLabel(text: "Welcome to My Statement, please fill in the\n fields below to log into your account.", fontSize: 16, textColor: .black, numberOfLines: 2)
+    let emailLabel = CustomLabel(text: "E-mail")
     let emailTextfield = CustomTextField(placeholder: "E-mail")
-    let passwordTextfield = CustomTextField(placeholder: "Senha", isSecure: true)
+    let PasswordLabel = CustomLabel(text: "Password")
+    let passwordTextfield = CustomTextField(placeholder: "Password", isSecure: true, leftIconName: "Group")
     let loginButton = CustomButton(title: "Login")
-    let orLabel = CustomLabel(text: "Or", textColor: .gray)
+    let orLabel = CustomLabel(text: "Or", textColor: .black)
     let createAccountButton = CustomButton(title: "Create account")
     
     override init(frame: CGRect) {
@@ -34,7 +37,9 @@ class LoginView: UIView {
         addSubview(purpleView)
         addSubview(titleLabel)
         addSubview(subtitleLabel)
+        addSubview(emailLabel)
         addSubview(emailTextfield)
+        addSubview(PasswordLabel)
         addSubview(passwordTextfield)
         addSubview(loginButton)
         addSubview(orLabel)
@@ -67,6 +72,11 @@ class LoginView: UIView {
             make.right.equalToSuperview().offset(-20)
         }
         
+        emailLabel.snp.makeConstraints { make in
+            make.left.equalToSuperview().offset(20)
+            make.bottom.equalTo(emailTextfield.snp.top).offset(-5)
+        }
+        
         emailTextfield.snp.makeConstraints { make in
             make.top.equalTo(subtitleLabel.snp.bottom).offset(40)
             make.left.equalToSuperview().offset(20)
@@ -74,12 +84,19 @@ class LoginView: UIView {
             make.height.equalTo(50)
         }
         
+        PasswordLabel.snp.makeConstraints { make in
+            make.left.equalToSuperview().offset(20)
+            make.bottom.equalTo(passwordTextfield.snp.top).offset(-5)
+        }
+        
         passwordTextfield.snp.makeConstraints{ make in
-            make.top.equalTo(emailTextfield.snp.bottom).offset(20)
+            make.top.equalTo(emailTextfield.snp.bottom).offset(40)
             make.left.equalToSuperview().offset(20)
             make.right.equalToSuperview().offset(-20)
             make.height.equalTo(50)
         }
+        
+        
         
         loginButton.snp.makeConstraints { make in
             make.top.equalTo(passwordTextfield.snp.bottom).offset(40)

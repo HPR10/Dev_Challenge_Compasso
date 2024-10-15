@@ -1,5 +1,5 @@
 //
-//  CustomBackgroundView.swift
+//  CustomBackground.swift
 //  Dev_Challenge
 //
 //  Created by Hugo Pinheiro  on 12/10/24.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class CustomBackgroundView: UIView {
+class CustomBackground: UIView {
     
     init(backgroundColor: UIColor, cornerRadius: CGFloat = 0) {
         super.init(frame: .zero)

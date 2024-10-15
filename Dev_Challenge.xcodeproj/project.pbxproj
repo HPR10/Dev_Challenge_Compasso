@@ -19,7 +19,7 @@
 		4747BD012CBD9E2E00637E76 /* WhiteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4747BD002CBD9E2E00637E76 /* WhiteView.swift */; };
 		4747BD042CBDD83D00637E76 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4747BD032CBDD83D00637E76 /* UIColor+Extensions.swift */; };
 		47ACD0D92CBAC47600CFCC36 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47ACD0D82CBAC47600CFCC36 /* LoginView.swift */; };
-		47ACD0DB2CBAC5CF00CFCC36 /* CustomBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47ACD0DA2CBAC5CF00CFCC36 /* CustomBackgroundView.swift */; };
+		47ACD0DB2CBAC5CF00CFCC36 /* CustomBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47ACD0DA2CBAC5CF00CFCC36 /* CustomBackground.swift */; };
 		47ACD0DD2CBADCF400CFCC36 /* CustomImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47ACD0DC2CBADCF400CFCC36 /* CustomImageView.swift */; };
 		A564AC01AA4CE75A0428D177 /* Pods_Dev_Challenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09E1871DDA34B1567758F78D /* Pods_Dev_Challenge.framework */; };
 /* End PBXBuildFile section */
@@ -40,7 +40,7 @@
 		4747BD002CBD9E2E00637E76 /* WhiteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhiteView.swift; sourceTree = "<group>"; };
 		4747BD032CBDD83D00637E76 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
 		47ACD0D82CBAC47600CFCC36 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
-		47ACD0DA2CBAC5CF00CFCC36 /* CustomBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBackgroundView.swift; sourceTree = "<group>"; };
+		47ACD0DA2CBAC5CF00CFCC36 /* CustomBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBackground.swift; sourceTree = "<group>"; };
 		47ACD0DC2CBADCF400CFCC36 /* CustomImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomImageView.swift; sourceTree = "<group>"; };
 		7B4896709D6E49FAB6255545 /* Pods-Dev_Challenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dev_Challenge.debug.xcconfig"; path = "Target Support Files/Pods-Dev_Challenge/Pods-Dev_Challenge.debug.xcconfig"; sourceTree = "<group>"; };
 		E5A05738E21639540421C7F9 /* Pods-Dev_Challenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dev_Challenge.release.xcconfig"; path = "Target Support Files/Pods-Dev_Challenge/Pods-Dev_Challenge.release.xcconfig"; sourceTree = "<group>"; };
@@ -61,11 +61,7 @@
 		47073C7D2CB9EE8F007E0D95 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				47073C7E2CB9EEA4007E0D95 /* CustomTextField.swift */,
-				47073C802CB9EFDA007E0D95 /* CustomButton.swift */,
-				47073C852CBA40A8007E0D95 /* CustomLabel.swift */,
-				47ACD0DA2CBAC5CF00CFCC36 /* CustomBackgroundView.swift */,
-				47ACD0DC2CBADCF400CFCC36 /* CustomImageView.swift */,
+				47073C822CB9F0F3007E0D95 /* Login */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -75,8 +71,6 @@
 			children = (
 				47073C832CB9F119007E0D95 /* LoginViewController.swift */,
 				47ACD0D82CBAC47600CFCC36 /* LoginView.swift */,
-				4747BCFE2CBD9C5C00637E76 /* PurpleView.swift */,
-				4747BD002CBD9E2E00637E76 /* WhiteView.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -103,7 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				4747BD022CBDD82800637E76 /* Utils */,
-				47073C822CB9F0F3007E0D95 /* Login */,
+				478014CD2CBED3A8006E84C3 /* Shared */,
 				47073C7D2CB9EE8F007E0D95 /* View */,
 				47270BD22CB99F72005499A3 /* AppDelegate.swift */,
 				47270BD42CB99F72005499A3 /* SceneDelegate.swift */,
@@ -120,6 +114,20 @@
 				4747BD032CBDD83D00637E76 /* UIColor+Extensions.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		478014CD2CBED3A8006E84C3 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				4747BCFE2CBD9C5C00637E76 /* PurpleView.swift */,
+				4747BD002CBD9E2E00637E76 /* WhiteView.swift */,
+				47073C7E2CB9EEA4007E0D95 /* CustomTextField.swift */,
+				47073C802CB9EFDA007E0D95 /* CustomButton.swift */,
+				47073C852CBA40A8007E0D95 /* CustomLabel.swift */,
+				47ACD0DA2CBAC5CF00CFCC36 /* CustomBackground.swift */,
+				47ACD0DC2CBADCF400CFCC36 /* CustomImageView.swift */,
+			);
+			path = Shared;
 			sourceTree = "<group>";
 		};
 		550AEBB6349038B455629894 /* Frameworks */ = {
@@ -259,7 +267,7 @@
 				47ACD0D92CBAC47600CFCC36 /* LoginView.swift in Sources */,
 				47073C862CBA40A8007E0D95 /* CustomLabel.swift in Sources */,
 				4747BCFF2CBD9C5C00637E76 /* PurpleView.swift in Sources */,
-				47ACD0DB2CBAC5CF00CFCC36 /* CustomBackgroundView.swift in Sources */,
+				47ACD0DB2CBAC5CF00CFCC36 /* CustomBackground.swift in Sources */,
 				4747BD042CBDD83D00637E76 /* UIColor+Extensions.swift in Sources */,
 				47073C7F2CB9EEA4007E0D95 /* CustomTextField.swift in Sources */,
 				47270BD32CB99F72005499A3 /* AppDelegate.swift in Sources */,

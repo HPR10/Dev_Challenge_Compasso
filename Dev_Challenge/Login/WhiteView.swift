@@ -9,7 +9,7 @@ import UIKit
 
 class WhiteView: UIView {
     
-    let titleLabel = CustomLabel(text: "Log in", fontSize: 30, fontWeight: .bold, textColor: .black)
+    let titleLabel = CustomLabel(text: "Log in", fontSize: 26, fontWeight: .bold, textColor: .black)
     let subtitleLabel = CustomLabel(text: "Welcome to My Statement, please fill in the\n fields below to log into your account.", fontSize: 16, textColor: .black, numberOfLines: 2, textAlignment: .center)
     
     let emailLabel = CustomLabel(text: "E-mail", isbold: true)
@@ -59,11 +59,11 @@ class WhiteView: UIView {
         
         emailLabel.snp.makeConstraints { make in
             make.left.equalToSuperview().offset(20)
-            make.bottom.equalTo(emailTextfield.snp.top).offset(-10)
+            make.bottom.equalTo(emailTextfield.snp.top).offset(-20)
         }
         
         emailTextfield.snp.makeConstraints { make in
-            make.top.equalTo(subtitleLabel.snp.bottom).offset(40)
+            make.top.equalTo(subtitleLabel.snp.bottom).offset(60)
             make.left.equalToSuperview().offset(20)
             make.right.equalToSuperview().offset(-20)
             make.height.equalTo(50)
@@ -71,11 +71,11 @@ class WhiteView: UIView {
         
         passwordLabel.snp.makeConstraints { make in
             make.left.equalToSuperview().offset(20)
-            make.bottom.equalTo(passwordTextfield.snp.top).offset(-10)
+            make.bottom.equalTo(passwordTextfield.snp.top).offset(-20)
         }
         
         passwordTextfield.snp.makeConstraints { make in
-            make.top.equalTo(emailTextfield.snp.bottom).offset(40)
+            make.top.equalTo(emailTextfield.snp.bottom).offset(60)
             make.left.equalToSuperview().offset(20)
             make.right.equalToSuperview().offset(-20)
             make.height.equalTo(50)
@@ -85,7 +85,7 @@ class WhiteView: UIView {
             make.top.equalTo(passwordTextfield.snp.bottom).offset(20)
             make.left.equalToSuperview().offset(20)
             make.right.equalToSuperview().offset(-20)
-            make.height.equalTo(50)
+            make.height.equalTo(55)
         }
         
         orLabel.snp.makeConstraints { make in
@@ -98,7 +98,7 @@ class WhiteView: UIView {
             make.top.equalTo(orLabel.snp.bottom).offset(20)
             make.left.equalToSuperview().offset(20)
             make.right.equalToSuperview().offset(-20)
-            make.height.equalTo(50)
+            make.height.equalTo(55)
         }
     }
     

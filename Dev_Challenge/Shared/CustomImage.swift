@@ -1,5 +1,5 @@
 //
-//  CustomImageView.swift
+//  CustomImage.swift
 //  Dev_Challenge
 //
 //  Created by Hugo Pinheiro  on 12/10/24.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class CustomImageView: UIImageView {
+class CustomImage: UIImageView {
     
     init(imageName: String, contentMode: UIView.ContentMode = .scaleAspectFit, cornerRadius: CGFloat = 0) {
         super.init(frame: .zero)

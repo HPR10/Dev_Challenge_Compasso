@@ -9,7 +9,7 @@ import UIKit
 
 class PurpleView: UIView {
     
-    let image = CustomImageView(imageName: "Vector", contentMode: .scaleAspectFit)
+    let image = CustomImage(imageName: "Vector", contentMode: .scaleAspectFit)
     
     override init(frame: CGRect) {
         super.init(frame: frame)

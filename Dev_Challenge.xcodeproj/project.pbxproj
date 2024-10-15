@@ -15,6 +15,9 @@
 		47270BD52CB99F72005499A3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47270BD42CB99F72005499A3 /* SceneDelegate.swift */; };
 		47270BDC2CB99F74005499A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47270BDB2CB99F74005499A3 /* Assets.xcassets */; };
 		47270BDF2CB99F74005499A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47270BDD2CB99F74005499A3 /* LaunchScreen.storyboard */; };
+		4747BCFF2CBD9C5C00637E76 /* PurpleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4747BCFE2CBD9C5C00637E76 /* PurpleView.swift */; };
+		4747BD012CBD9E2E00637E76 /* WhiteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4747BD002CBD9E2E00637E76 /* WhiteView.swift */; };
+		4747BD042CBDD83D00637E76 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4747BD032CBDD83D00637E76 /* UIColor+Extensions.swift */; };
 		47ACD0D92CBAC47600CFCC36 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47ACD0D82CBAC47600CFCC36 /* LoginView.swift */; };
 		47ACD0DB2CBAC5CF00CFCC36 /* CustomBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47ACD0DA2CBAC5CF00CFCC36 /* CustomBackgroundView.swift */; };
 		47ACD0DD2CBADCF400CFCC36 /* CustomImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47ACD0DC2CBADCF400CFCC36 /* CustomImageView.swift */; };
@@ -33,6 +36,9 @@
 		47270BDB2CB99F74005499A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		47270BDE2CB99F74005499A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		47270BE02CB99F74005499A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4747BCFE2CBD9C5C00637E76 /* PurpleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurpleView.swift; sourceTree = "<group>"; };
+		4747BD002CBD9E2E00637E76 /* WhiteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhiteView.swift; sourceTree = "<group>"; };
+		4747BD032CBDD83D00637E76 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
 		47ACD0D82CBAC47600CFCC36 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		47ACD0DA2CBAC5CF00CFCC36 /* CustomBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBackgroundView.swift; sourceTree = "<group>"; };
 		47ACD0DC2CBADCF400CFCC36 /* CustomImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomImageView.swift; sourceTree = "<group>"; };
@@ -69,6 +75,8 @@
 			children = (
 				47073C832CB9F119007E0D95 /* LoginViewController.swift */,
 				47ACD0D82CBAC47600CFCC36 /* LoginView.swift */,
+				4747BCFE2CBD9C5C00637E76 /* PurpleView.swift */,
+				4747BD002CBD9E2E00637E76 /* WhiteView.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -94,6 +102,7 @@
 		47270BD12CB99F72005499A3 /* Dev_Challenge */ = {
 			isa = PBXGroup;
 			children = (
+				4747BD022CBDD82800637E76 /* Utils */,
 				47073C822CB9F0F3007E0D95 /* Login */,
 				47073C7D2CB9EE8F007E0D95 /* View */,
 				47270BD22CB99F72005499A3 /* AppDelegate.swift */,
@@ -103,6 +112,14 @@
 				47270BE02CB99F74005499A3 /* Info.plist */,
 			);
 			path = Dev_Challenge;
+			sourceTree = "<group>";
+		};
+		4747BD022CBDD82800637E76 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				4747BD032CBDD83D00637E76 /* UIColor+Extensions.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		550AEBB6349038B455629894 /* Frameworks */ = {
@@ -236,11 +253,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4747BD012CBD9E2E00637E76 /* WhiteView.swift in Sources */,
 				47073C842CB9F119007E0D95 /* LoginViewController.swift in Sources */,
 				47ACD0DD2CBADCF400CFCC36 /* CustomImageView.swift in Sources */,
 				47ACD0D92CBAC47600CFCC36 /* LoginView.swift in Sources */,
 				47073C862CBA40A8007E0D95 /* CustomLabel.swift in Sources */,
+				4747BCFF2CBD9C5C00637E76 /* PurpleView.swift in Sources */,
 				47ACD0DB2CBAC5CF00CFCC36 /* CustomBackgroundView.swift in Sources */,
+				4747BD042CBDD83D00637E76 /* UIColor+Extensions.swift in Sources */,
 				47073C7F2CB9EEA4007E0D95 /* CustomTextField.swift in Sources */,
 				47270BD32CB99F72005499A3 /* AppDelegate.swift in Sources */,
 				47270BD52CB99F72005499A3 /* SceneDelegate.swift in Sources */,

@@ -14,7 +14,6 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .white
         view.addSubview(loginView)
         
         loginView.snp.makeConstraints { make in

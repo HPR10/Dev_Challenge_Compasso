@@ -10,7 +10,8 @@ import UIKit
 class CreateAccountView: UIView {
     
     let purpleView = PurpleView()
-    let whiteView = LoginFormView()
+    let whiteView = WhiteView()
+    let createAccountFormView = CreateAccountFormView()
     
     override init(frame: CGRect) {
         super.init(frame: .zero)
@@ -25,16 +26,20 @@ class CreateAccountView: UIView {
     private func setupView() {
         addSubview(purpleView)
         addSubview(whiteView)
+        whiteView.addSubview(createAccountFormView)
     }
     
     private func setupConstraints() {
         purpleView.snp.makeConstraints { make in
             make.top.left.right.equalToSuperview()
-            make.height.equalToSuperview().multipliedBy(0.35)
+            make.height.equalToSuperview().multipliedBy(0.25)
         }
         whiteView.snp.makeConstraints { make in
             make.top.equalTo(purpleView.snp.bottom).offset(-20)
             make.left.right.bottom.equalToSuperview()
+        }
+        createAccountFormView.snp.makeConstraints { make in
+            make.edges.equalToSuperview().inset(20)
         }
     }
 }

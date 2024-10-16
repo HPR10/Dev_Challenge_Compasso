@@ -21,6 +21,7 @@
 		478014D22CBED7C9006E84C3 /* CreateAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 478014D12CBED7C9006E84C3 /* CreateAccountView.swift */; };
 		478014D42CBED7D8006E84C3 /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 478014D32CBED7D8006E84C3 /* CreateAccountViewController.swift */; };
 		478014D62CBEF360006E84C3 /* LoginFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 478014D52CBEF360006E84C3 /* LoginFormView.swift */; };
+		478014D82CBF0AD0006E84C3 /* CreateAccountFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 478014D72CBF0AD0006E84C3 /* CreateAccountFormView.swift */; };
 		47ACD0D92CBAC47600CFCC36 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47ACD0D82CBAC47600CFCC36 /* LoginView.swift */; };
 		47ACD0DB2CBAC5CF00CFCC36 /* CustomBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47ACD0DA2CBAC5CF00CFCC36 /* CustomBackground.swift */; };
 		47ACD0DD2CBADCF400CFCC36 /* CustomImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47ACD0DC2CBADCF400CFCC36 /* CustomImage.swift */; };
@@ -45,6 +46,7 @@
 		478014D12CBED7C9006E84C3 /* CreateAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountView.swift; sourceTree = "<group>"; };
 		478014D32CBED7D8006E84C3 /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
 		478014D52CBEF360006E84C3 /* LoginFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginFormView.swift; sourceTree = "<group>"; };
+		478014D72CBF0AD0006E84C3 /* CreateAccountFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountFormView.swift; sourceTree = "<group>"; };
 		47ACD0D82CBAC47600CFCC36 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		47ACD0DA2CBAC5CF00CFCC36 /* CustomBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBackground.swift; sourceTree = "<group>"; };
 		47ACD0DC2CBADCF400CFCC36 /* CustomImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomImage.swift; sourceTree = "<group>"; };
@@ -143,6 +145,7 @@
 			children = (
 				478014D12CBED7C9006E84C3 /* CreateAccountView.swift */,
 				478014D32CBED7D8006E84C3 /* CreateAccountViewController.swift */,
+				478014D72CBF0AD0006E84C3 /* CreateAccountFormView.swift */,
 			);
 			path = CreateAccount;
 			sourceTree = "<group>";
@@ -284,6 +287,7 @@
 				478014D42CBED7D8006E84C3 /* CreateAccountViewController.swift in Sources */,
 				47ACD0DD2CBADCF400CFCC36 /* CustomImage.swift in Sources */,
 				47ACD0D92CBAC47600CFCC36 /* LoginView.swift in Sources */,
+				478014D82CBF0AD0006E84C3 /* CreateAccountFormView.swift in Sources */,
 				47073C862CBA40A8007E0D95 /* CustomLabel.swift in Sources */,
 				4747BCFF2CBD9C5C00637E76 /* PurpleView.swift in Sources */,
 				47ACD0DB2CBAC5CF00CFCC36 /* CustomBackground.swift in Sources */,

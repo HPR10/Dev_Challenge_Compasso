@@ -11,7 +11,7 @@ import SnapKit
 class HomeView: UIView {
     
     let whiteView = WhiteView()
-    let profileImagView = CustomImage(imageName: "Avatars")
+    let profileImageView = CustomImage(imageName: "Avatars")
     let searchTextField = CustomTextField(placeholder: "Search something", iconName: "loup", iconPosition: .right)
     let separatorView = CuastomSeparatorView(color: .lightGray, thickness: 1.0)
     let grayView = GrayView()
@@ -34,7 +34,7 @@ class HomeView: UIView {
     private func setupView() {
         
         addSubview(whiteView)
-        whiteView.addSubview(profileImagView)
+        whiteView.addSubview(profileImageView)
         whiteView.addSubview(searchTextField)
         addSubview(separatorView)
         addSubview(grayView)
@@ -53,7 +53,7 @@ class HomeView: UIView {
             make.height.equalToSuperview().multipliedBy(0.15) // Altura fixa para whiteView
         }
         
-        profileImagView.snp.makeConstraints { make in
+        profileImageView.snp.makeConstraints { make in
             make.top.equalToSuperview().offset(60) // Distância do topo
             make.left.equalToSuperview().offset(16) // Distância da esquerda
             make.width.height.equalTo(55) // Tamanho da imagem
@@ -61,7 +61,7 @@ class HomeView: UIView {
         
         searchTextField.snp.makeConstraints { make in
             make.top.equalToSuperview().offset(60)
-            make.left.equalTo(profileImagView.snp.right).offset(50)
+            make.left.equalTo(profileImageView.snp.right).offset(50)
             make.right.equalToSuperview().offset(-20)
             make.height.equalTo(55)
         }

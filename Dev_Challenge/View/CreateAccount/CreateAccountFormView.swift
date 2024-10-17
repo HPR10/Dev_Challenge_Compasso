@@ -21,10 +21,10 @@ class CreateAccountFormView: UIView {
     let emailLabel = CustomLabel(text: "E-mail", isbold: true)
     let emailTextfield = CustomTextField(placeholder: "E-mail", borderColor: .lightGray, borderWidth: 1)
     let passwordLabel = CustomLabel(text: "Password", isbold: true)
-    let passwordTextfield = CustomTextField(placeholder: "Password", isSecure: true, leftIconName: "Group", borderColor: .lightGray, borderWidth: 1)
+    let passwordTextfield = CustomTextField(placeholder: "Password", isSecure: true, iconName: "Group", borderColor: .lightGray, borderWidth: 1)
     
     let confirmpasswordLabel = CustomLabel(text: "Confirm password", isbold: true)
-    let confirmpasswordTextfield = CustomTextField(placeholder: "Password", isSecure: true, leftIconName: "Group", borderColor: .lightGray, borderWidth: 1)
+    let confirmpasswordTextfield = CustomTextField(placeholder: "Password", isSecure: true, iconName: "Group", borderColor: .lightGray, borderWidth: 1)
     
     let createAccountButton = CustomButton(title: "Create account", backgroundColor: .black)
     

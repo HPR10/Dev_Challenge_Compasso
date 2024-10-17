@@ -15,7 +15,7 @@ class LoginFormView: UIView {
     let emailLabel = CustomLabel(text: "E-mail", isbold: true)
     let emailTextfield = CustomTextField(placeholder: "E-mail", borderColor: .lightGray, borderWidth: 1)
     let passwordLabel = CustomLabel(text: "Password", isbold: true)
-    let passwordTextfield = CustomTextField(placeholder: "Password", isSecure: true, leftIconName: "Group", borderColor: .lightGray, borderWidth: 1)
+    let passwordTextfield = CustomTextField(placeholder: "Password", isSecure: true, iconName: "Group", borderColor: .lightGray, borderWidth: 1)
     
     let loginButton = CustomButton(title: "Log in", backgroundColor: .black, borderColor: .black, borderWidth: 1, isbold: true)
     let orLabel = CustomLabel(text: "or", textColor: .black, isbold: true)

@@ -39,12 +39,15 @@ class HomeView: UIView {
         addSubview(separatorView)
         addSubview(grayView)
         
+        grayView.addSubview(stackView)
         stackView.axis = .vertical
         stackView.alignment = .center
         stackView.spacing = 60
         stackView.distribution = .equalSpacing
         
-        grayView.addSubview(stackView)
+        profileImageView.enableTapGesture(enabled: true) {
+            print("imagem clicada")
+        }
     }
     
     private func setupConstraints() {

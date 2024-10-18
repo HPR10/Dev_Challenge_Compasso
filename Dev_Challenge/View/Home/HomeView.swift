@@ -11,10 +11,9 @@ import SnapKit
 class HomeView: UIView {
     
     let whiteView = WhiteView()
-    let profileImageView = CustomImage(imageName: "Avatars")
-    let searchTextField = CustomTextField(placeholder: "Search something", iconName: "loup", iconPosition: .right)
-    let separatorView = CuastomSeparatorView(color: .lightGray, thickness: 1.0)
+    let headerView = CustomHeaderView()
     let grayView = GrayView()
+    let separatorView = CuastomSeparatorView(color: .lightGray, thickness: 1.0)
     let titleLabel = CustomLabel(text: "Welcome to My statement", fontSize: 28, isbold: true)
     let image = CustomImage(imageName: "Image")
     let subtitle = CustomLabel(text: "Now that you are logged in, you can view\n your statement and change you profile.\n Enjoy!", fontSize: 16, numberOfLines: 3)
@@ -34,20 +33,14 @@ class HomeView: UIView {
     private func setupView() {
         
         addSubview(whiteView)
-        whiteView.addSubview(profileImageView)
-        whiteView.addSubview(searchTextField)
-        addSubview(separatorView)
+        whiteView.addSubview(headerView)
         addSubview(grayView)
-        
+        grayView.addSubview(separatorView)
         grayView.addSubview(stackView)
         stackView.axis = .vertical
         stackView.alignment = .center
         stackView.spacing = 60
         stackView.distribution = .equalSpacing
-        
-        profileImageView.enableTapGesture(enabled: true) {
-            print("imagem clicada")
-        }
     }
     
     private func setupConstraints() {
@@ -56,28 +49,18 @@ class HomeView: UIView {
             make.height.equalToSuperview().multipliedBy(0.15) // Altura fixa para whiteView
         }
         
-        profileImageView.snp.makeConstraints { make in
-            make.top.equalToSuperview().offset(60) // Distância do topo
-            make.left.equalToSuperview().offset(16) // Distância da esquerda
-            make.width.height.equalTo(55) // Tamanho da imagem
+        headerView.snp.makeConstraints { make in
+            make.edges.equalToSuperview()
         }
-        
-        searchTextField.snp.makeConstraints { make in
-            make.top.equalToSuperview().offset(60)
-            make.left.equalTo(profileImageView.snp.right).offset(50)
-            make.right.equalToSuperview().offset(-20)
-            make.height.equalTo(55)
-        }
-        
-        separatorView.snp.makeConstraints { make in
-            make.top.equalTo(whiteView.snp.bottom)
-            make.left.right.equalToSuperview()
-            make.height.equalTo(0.5) // Definindo uma altura para a linha separadora
-        }
-        
+                
         grayView.snp.makeConstraints { make in
-            make.top.equalTo(separatorView.snp.bottom) // Posiciona a grayView logo abaixo da linha
+            make.top.equalTo(whiteView.snp.bottom) 
             make.left.right.bottom.equalToSuperview() // O grayView ocupa o resto da tela
+        }
+        separatorView.snp.makeConstraints { make in
+            make.top.equalToSuperview()
+            make.left.right.equalToSuperview()
+            make.height.equalTo(0.5)
         }
         
         stackView.snp.makeConstraints { make in
